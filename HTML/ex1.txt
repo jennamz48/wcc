@@ -1,9 +1,3 @@
 Example 1
 
-habfjahebf
-asd aksjdb
-aabskdjbc
-absd
-
-
-zdg 
+This is the solution!
