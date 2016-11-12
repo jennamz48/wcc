@@ -72,5 +72,5 @@ next_age = age + 1
 birth_month = 'August'
 birth_stone = 'peridot'
 
-print('Ariel is' + str(age) + "years old now, but she'll turn" + str(next_age)+"in"+ str(birth_month) + ".")
-print('Her birth stone is' + str(birth_stone) + '.')
+print('Ariel is ' + str(age) + " years old now, but she'll turn " + str(next_age)+" in "+ str(birth_month) + ".")
+print('Her birth stone is ' + str(birth_stone) + '.')
