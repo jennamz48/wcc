@@ -14,9 +14,9 @@
 #print('You are ' + str(dog_years) + ' years old in dog years.')
 
 
-meal = raw_input('How much was your meal?')
-tip = int(meal)*0.2
-total_cost = int(meal) + int(tip)
+meal = float(raw_input('How much was your meal?'))
+tip = round(float(meal)*0.20,2)
+total_cost = round(float(meal + tip),2)
 
 print("You should tip " + "$" + str(tip))
 print("Your total cost would be " + "$" + str(total_cost))
