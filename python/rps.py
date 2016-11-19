@@ -103,5 +103,5 @@ def play():
     else:
         print('Thanks for playing!')
 
-# Run the game
+# Run the game  
 play()
