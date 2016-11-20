@@ -65,11 +65,23 @@ def play():
     # Keep prompting until they get it correct
     # For every failed attempt, print 'Too x. Guess again.' where x is either 'high' or 'low'
 
-    while compare(guess, secret_number) != 'Correct':
-        if guess > secret_number:
-            print('Too high. Guess again.')
-        elif guess < secret_number:
-            print('Too low. Guess again.')
+
+#Jenna's attempt, which also works:
+
+#    while compare(guess, secret_number) != 'Correct':
+#        if guess > secret_number:
+#            print('Too high. Guess again.')
+#        elif guess < secret_number:
+#            print('Too low. Guess again.')
+#        attempt_count = attempt_count+1
+#        guess = get_guess()
+
+
+#More eloquent version from WCC:
+
+    while guess != secret_number:
+        results = compare(guess, secret_number);
+        print('Too ' + results + '. Guess again.\n')
         attempt_count = attempt_count+1
         guess = get_guess()
 
@@ -77,6 +89,9 @@ def play():
     # Print conclusion
     if compare(guess, secret_number) == 'Correct':
         print('You got it! The number was ' + str(secret_number))
-        print('It took you ' + str(attempt_count) +' guesses!')
+        if attempt_count == 1:
+            print('It took you ' + str(attempt_count) +' guess!')
+        else:
+            print('It took you ' + str(attempt_count) +' guesses!')
 # Run the game
 play()
