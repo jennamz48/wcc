@@ -56,8 +56,7 @@ def play():
         if guess!= secret_number:
             results = compare(guess, secret_number)
             guess_count = guess_count+1
-            guess_left = 5-guess_count
-            print('Too ' + results + '. You have ' + str(guess_left)+' guesses left.\n')
+            print('Too ' + results + '. You have ' + str(5-guess_count)+' guesses left.\n')
             guess = get_guess()
             if guess_count == 4 and guess != secret_number:
                     print ('Sorry, you ran out of turns! The secret number was ' + str(secret_number))
